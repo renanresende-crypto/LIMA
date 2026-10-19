@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página SENAI</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        header { background: #f0f0f0; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+        nav a { margin-right: 15px; color: #000; text-decoration: none; font-weight: bold; }
+        
+        .secao { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+        
+        /* Caixas dos Cursos e Sobre lado a lado */
+        .caixas { display: flex; gap: 15px; margin-top: 10px; }
+        .card img { width: 100%; height: 120px; object-fit: cover; border-radius: 3px; }
+        
+        /* Botão Simples */
+        .btn { background: #e30613; color: white; padding: 6px 12px; text-decoration: none; border-radius: 3px; display: inline-block; font-size: 14px; margin-top: 10px; border: none; cursor: pointer; }
+        
+        /* Formulário */
+        input, textarea { width: 100%; padding: 8px; margin: 5px 0 15px; border: 1px solid #ccc; border-radius: 3px; }
+        textarea { height: 80px; }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img src="assets/logo.png" alt="Logo SENAI" width="150">
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#video">Vídeo</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- 1. Início -->
+    <div id="inicio" class="secao">
+        <h1>Transforme seu futuro com o SENAI</h1>
+        <p>Aprenda na prática e prepare-se para o mercado de trabalho.</p>
+        <p><b>Áreas de formação:</b> Tecnologia | Indústria | Informática | Mecânica</p>
+    </div>
+
+    <!-- 2. Vídeo -->
+    <div id="video" class="secao">
+        <h2>Vídeo Institucional</h2>
+        <iframe width="100%" height="300" src="https://www.youtube.com/embed/ze3KJtYBJ1w" frameborder="0" allowfullscreen></iframe>
+        <p><a href="https://youtu.be/ze3KJtYBJ1w?si=bbnykUfvXoBsNvId" target="_blank">Clique aqui para assistir no YouTube</a></p>
+    </div>
+
+    <!-- 3. Cursos -->
+    <div id="cursos" class="secao">
+        <h2>Cursos em Destaque</h2>
+        <div class="caixas">
+            <div class="card">
+                <img src="assets/mecatronica.png" alt="Mecatrônica">
+                <h3>Técnico em Mecatrônica</h3>
+                <p>1.200 horas • 2 anos</p>
+                <p>Mecânica, eletrônica e programação.</p>
+                <a href="mecatronica.pdf" download class="btn">Clique para baixar o PDF do curso</a>
+            </div>
+
+            <div class="card">
+                <img src="assets/tecnicoenfermagem.png" alt="Enfermagem">
+                <h3>Técnico em Enfermagem</h3>
+                <p>1.800 horas • 2,5 anos</p>
+                <p>Cuidados e conhecimentos em saúde.</p>
+                <a href="enfermagem.pdf" download class="btn">Clique para baixar o PDF do curso</a>
+            </div>
+
+            <div class="card">
+                <img src="assets/eletricista.png" alt="Eletricista">
+                <h3>Eletricista Industrial</h3>
+                <p>400 horas • 6 meses</p>
+                <p>Instalações e comandos elétricos.</p>
+                <a href="eletricista.pdf" download class="btn">Clique para baixar o PDF do curso</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Sobre -->
+    <div id="sobre" class="secao">
+        <h2>Sobre o SENAI</h2>
+        <p>O SENAI é referência em educação profissional e tecnologia no Brasil.</p>
+        <div class="caixas">
+            <div class="card">
+                <h3>Missão</h3>
+                <p>Aumentar a competitividade da indústria brasileira.</p>
+            </div>
+            <div class="card">
+                <h3>Infraestrutura</h3>
+                <p>Laboratórios modernos com prática real.</p>
+            </div>
+            <div class="card">
+                <h3>Inovação</h3>
+                <p>Conexão com novas tecnologias industriais.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Contato -->
+    <div id="contato" class="secao">
+        <h2>Formulário de Contato</h2>
+        <form action="#" method="post">
+            <label>Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome">
+
+            <label>E-mail:</label>
+            <input type="email" name="email" placeholder="Digite seu e-mail">
+
+            <label>Mensagem:</label>
+            <textarea name="mensagem" placeholder="Escreva sua mensagem"></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
