@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.destaque {
+    color: blue;
+    font-weight: bold;
+}
+
+#Titulo-Principal {
+    color: red;
+    text-align: center;
+}
+
+#P1 {
+    font-size: 20px;
+    line-height: 1.5;
+    color: black;
+}
+
+#P2 {
+    font-size: 20px;
+    line-height: 1.5;
+    color: green;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+}
+
+h4 {
+    color: orange;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.lista {
+    list-style-type: square;
+    list-style-image: url('https://cdn-icons-png.flaticon.com/512/25/25231.png');
+    margin: 50px;
+    padding: 0px;
+}
+
+.img {
+    width: 300px;
+    height: 250px;
+    border: 2px solid black;
+    display: block;
+    margin: auto;
+}
+
+.tabela {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: lightgray;
+    padding: 10px;
+    border-spacing: 5px;
+}
+
+.tabela th,
+.tabela td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.link {
+    color: blue;
+    text-decoration: none;
+}
+
+.visited {
+    color: purple;
+}
+
+.hover {
+    color: red;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.active {
+    color: orange;
+}

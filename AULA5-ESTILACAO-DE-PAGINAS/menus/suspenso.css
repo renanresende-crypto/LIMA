@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    list-style: none;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.item-menu {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: red;
+    color: yellow;
+}
+
+.sub {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 180px;
+    list-style: none;
+}
+
+.item-menu:hover > .sub {
+    display: block;
+}
+
+.linksub {
+    padding: 10px 14px;
+}
