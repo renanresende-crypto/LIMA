@@ -87,3 +87,18 @@ h4 {
 .active {
     color: orange;
 }
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+#inicio {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
